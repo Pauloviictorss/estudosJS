@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do Mouse e Funções</title>
+    <script src="EventosDoMouse.js"></script>
+</head>
+<body>
+    <button 
+        style="width: 400px; height: 60px;"
+        onmousedown="onMouseDown()"
+        onmouseup="onMouseUp()"
+        onmouseout="onMouseOut()"
+        onmouseover="onMouseOver()"
+        onmousemove="onMouseMove()"
+    >
+        Botão Esquerdo!
+    </button>
+    <button 
+        style="width: 400px; height: 60px;"
+        oncontextmenu="return botaoDireito()"
+    >
+        Bloqueando funções do Botão Direito!
+    </button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+</head>
+<body>
+    <h1>Testando botões</h1>
+
+    <h2>Modificando uma &lt;div&gt;:</h2>
+
+    <div id="teste">
+        Clique em "Entrar" e informe seu nome!
+    </div>
+
+    <br>
+
+    <button onclick="document.getElementById('teste').innerHTML = `Seja bem vindo, ${prompt('Digite seu nome: ')}!`">Entrar</button>
+
+    <button onclick="window.location.href = window.location.href">Recarregar a página</button>
+
+    <h2>Modificando um &lt;button&gt;:</h2>
+
+    <div>
+        Mudando o nome de botões!
+    </div>
+
+    <br>
+
+    <button onclick="this.innerHTML = prompt('Informe o novo nome do botão: ')">Clique para mudar</button>
+
+    <button onclick="window.location.href = window.location.href">Recarregar a página</button>
+</body>
+</html>

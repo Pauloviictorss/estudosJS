@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do Teclado</title>
+    <script src="EventosDoTeclado.js"></script>
+</head>
+<body>
+    <label>Pressionando teclas do teclado: (<code>onkeydown</code> ou <code>onkeypress</code>)</label>
+    <input
+        style="width: 400px; height: 60px;"
+        type="text"
+        onkeydown="teclaPressionada(event)"
+    >
+<br>
+<br>
+    <label>Soltando teclas do teclado: </label>
+    <input
+        style="width: 400px; height: 60px;"
+        type="text"
+        onkeyup="soltouTecla(event)"
+    >
+<br>
+<br>
+    <label>Shift ativado: </label>
+    <input
+        style="width: 400px; height: 60px;"
+        type="text"
+        onkeydown="ShiftPressionado(event)"
+    >
+<br>
+<br>
+    <label>Ctrl ativado: </label>
+    <input
+        style="width: 400px; height: 60px;"
+        type="text"
+        onkeydown="CtrlPressionado(event)"
+    >
+</body>
+</html>
